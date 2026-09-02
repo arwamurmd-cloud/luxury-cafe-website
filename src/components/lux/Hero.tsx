@@ -23,9 +23,16 @@ export function Hero() {
           className="h-full w-full object-cover"
           initial={{ scale: 1.22, filter: "blur(14px)" }}
           animate={{ scale: 1, filter: "blur(0px)" }}
-          transition={{ duration: 2.2, ease: EASE }}
+          transition={{ duration: 1.6, ease: EASE }}
         />
         <div className="absolute inset-0" style={{ backgroundImage: "var(--gradient-veil)" }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(60% 50% at 50% 52%, oklch(0.232 0.026 39.1 / 0.42), transparent 75%)",
+          }}
+        />
       </motion.div>
 
       <motion.div

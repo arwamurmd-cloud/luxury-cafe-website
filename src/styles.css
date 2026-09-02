@@ -76,7 +76,7 @@
   --shadow-soft: 0 2px 8px oklch(0.232 0.026 39.1 / 0.04), 0 18px 50px -18px oklch(0.232 0.026 39.1 / 0.14);
   --shadow-lift: 0 6px 16px oklch(0.232 0.026 39.1 / 0.06), 0 40px 80px -28px oklch(0.232 0.026 39.1 / 0.24);
   --gradient-warm: linear-gradient(135deg, var(--honey), var(--ember));
-  --gradient-veil: linear-gradient(180deg, oklch(0.232 0.026 39.1 / 0.42) 0%, oklch(0.232 0.026 39.1 / 0.12) 45%, oklch(0.232 0.026 39.1 / 0.55) 100%);
+  --gradient-veil: linear-gradient(180deg, oklch(0.232 0.026 39.1 / 0.55) 0%, oklch(0.232 0.026 39.1 / 0.42) 45%, oklch(0.232 0.026 39.1 / 0.68) 100%);
   --ease-lux: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
