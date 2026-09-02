@@ -50,11 +50,7 @@ export function Hero() {
                 animate={{ y: "0%" }}
                 transition={{ duration: 1.4, delay: 0.65 + i * 0.14, ease: EASE }}
               >
-                {i === 2 ? (
-                  <em className="font-display italic text-honey not-italic-none">{line}</em>
-                ) : (
-                  line
-                )}
+                {i === 2 ? <em className="italic text-honey">{line}</em> : line}
               </motion.span>
             </span>
           ))}

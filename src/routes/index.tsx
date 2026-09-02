@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SmoothScroll } from "@/components/lux/SmoothScroll";
+import { Navbar } from "@/components/lux/Navbar";
+import { Hero } from "@/components/lux/Hero";
+import { About } from "@/components/lux/About";
+import { BestSellers } from "@/components/lux/BestSellers";
+import { Gallery } from "@/components/lux/Gallery";
+import { Reviews } from "@/components/lux/Reviews";
+import { WhyUs } from "@/components/lux/WhyUs";
+import { Instagram } from "@/components/lux/Instagram";
+import { Contact } from "@/components/lux/Contact";
+import { Footer } from "@/components/lux/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Eat Bae — Luxury Café, Coffee & Ramen in Bandra West";
+const description =
+  "Eat Bae is a sunlit café in Bandra West serving single-origin coffee, 18-hour tonkotsu ramen and golden-hour brunch. Reserve a table on the terrace.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "restaurant.restaurant" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <SmoothScroll />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <BestSellers />
+        <Gallery />
+        <Reviews />
+        <WhyUs />
+        <Instagram />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
