@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useSpring } from "motion/react";
 import { useRef, type ReactNode } from "react";
 
-type Variant = "solid" | "outline" | "ghost";
+type Variant = "solid" | "outline" | "ghost" | "cream";
 
 const styles: Record<Variant, string> = {
   solid:
@@ -10,6 +10,7 @@ const styles: Record<Variant, string> = {
     "glass-dark text-background hover:bg-background hover:text-foreground border",
   ghost:
     "border border-foreground/20 text-foreground hover:border-ember hover:text-ember",
+  cream: "bg-cream text-cocoa hover:bg-honey border border-transparent",
 };
 
 export function MagneticButton({

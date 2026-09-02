@@ -79,7 +79,7 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 1.35, ease: EASE }}
           className="mt-11 flex flex-wrap items-center justify-center gap-4"
         >
-          <MagneticButton href="#best-sellers" variant="solid" className="bg-cream text-cocoa">
+          <MagneticButton href="#best-sellers" variant="cream">
             Explore Menu
           </MagneticButton>
           <MagneticButton href="#contact" variant="outline">
